@@ -3,8 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 
 const test = {
-  ola: 1,
-  adeus: 2,
+  ola: '1',
+  adeus: '2',
 };
 
 class App extends Component {
