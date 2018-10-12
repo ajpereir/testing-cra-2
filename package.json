@@ -2,6 +2,20 @@
   "name": "testing-cra-2",
   "version": "0.1.0",
   "private": true,
+  "lint-staged": {
+    "src/**/*.{js,jsx,json}": [
+      "eslint --ext=js --ext=jsx --fix .",
+      "prettier --config .prettierrc --write",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "precommit": "lint-staged"
+  },
   "dependencies": {
     "husky": "1.1.2",
     "lint-staged": "7.3.0",
@@ -10,19 +24,14 @@
     "react-dom": "16.5.2",
     "react-scripts": "2.0.4"
   },
-  "lint-staged": {
-    "src/**/*.{js,jsx,json,scss,css}": [
-      "prettier --config .prettierrc --write",
-      "git add"
-    ]
-  },
-  "scripts": {
-    "prettier-watch": "onchange '**/*.js' -- prettier --write {{changed}}",
-    "precommit": "lint-staged",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "devDependencies": {
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1"
   },
   "eslintConfig": {
     "extends": "react-app"
