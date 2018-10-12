@@ -4,7 +4,7 @@ import './App.css';
 
 const test = {
   ola: '1',
-  adeus: '2',
+  adeus: 'sddsfad',
 };
 
 class App extends Component {
