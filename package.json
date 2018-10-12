@@ -4,7 +4,7 @@
   "private": true,
   "lint-staged": {
     "src/**/*.{js,jsx,json}": [
-      "prettier --config .prettierrc --write",
+      "prettier --config ./linters/.prettierrc --write",
       "eslint --ext=js --ext=jsx --fix",
       "git add"
     ]
