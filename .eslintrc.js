@@ -19,6 +19,14 @@ module.exports = {
     }],
     'react/jsx-filename-extension': [1, { "extensions": [".js", ".jsx"] }],
     'react/prefer-stateless-function': "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": ["src/tests/**"],
+        "optionalDependencies": false,
+        "peerDependencies": false
+      }
+    ],
   },
   'parserOptions': {
     'ecmaFeatures': {
