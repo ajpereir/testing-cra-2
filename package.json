@@ -17,6 +17,7 @@
     ]
   },
   "scripts": {
+    "prettier-watch": "onchange '**/*.js' -- prettier --write {{changed}}",
     "precommit": "lint-staged",
     "start": "react-scripts start",
     "build": "react-scripts build",
