@@ -27,6 +27,15 @@ module.exports = {
         "peerDependencies": false
       }
     ],
+    'jsx-a11y/anchor-is-valid': [
+      'error',
+      {
+        components: ['Link'],
+        specialLink: [],
+        specialLink: ['to'],
+        aspects: ['noHref', 'invalidHref', 'preferButton'],
+      },
+    ],
   },
   'parserOptions': {
     'ecmaFeatures': {

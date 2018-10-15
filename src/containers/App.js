@@ -1,21 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class App extends Component {
+import { ContextProvider } from '../context';
+
+import ChildComponent from '../components/ChildComponent';
+
+class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <p>sdfgsdfgsdfgsdfg.</p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Tests
-          </a>
-        </header>
-      </div>
+      <ContextProvider>
+        <div className="App">
+          dfbdfgh
+          <ChildComponent />
+        </div>
+      </ContextProvider>
     );
   }
 }
